@@ -13,6 +13,7 @@ use App\Http\Controllers\SenderController;
 |
 */
 
+Route::get('/', [SenderController::class, 'Send']);
 Route::post('/', [SenderController::class, 'Send']);
 Route::post('/{id1}', [SenderController::class, 'Send']);
 Route::post('/{id1}/{id2}', [SenderController::class, 'Send']);
